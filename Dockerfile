@@ -47,7 +47,8 @@ RUN apt-get install -y fonts-wqy-zenhei
 # RUN apt install fonts-wqy-zenhei
 RUN apt-get install -y --force-yes -q \
     libnotify-dev 
-RUN /bin/bash -c "cd /app && npm install cypress@12.13.0 --save-dev && ./node_modules/.bin/cypress install"
+# RUN /bin/bash -c "cd /app && npm install cypress@12.13.0 --save-dev && ./node_modules/.bin/cypress install"
+RUN /bin/bash -c "cd /app && npm install cypress@12.17.0 --save-dev && ./node_modules/.bin/cypress install"
 
 
 CMD [\
